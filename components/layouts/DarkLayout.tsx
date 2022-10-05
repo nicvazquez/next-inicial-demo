@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-export const DarkLayout: FC = ({ children }) => {
+export const DarkLayout: FC<{ children: JSX.Element }> = ({ children }) => {
 	return (
 		<div
 			style={{
