@@ -4,7 +4,9 @@ import { Navbar } from "../Navbar";
 
 import styles from "./MainLayout.module.css";
 
-export const MainLayout: FC<{ children: JSX.Element }> = ({ children }) => {
+export const MainLayout: FC<{ children: JSX.Element | JSX.Element[] }> = ({
+	children,
+}) => {
 	return (
 		<div className={styles.container}>
 			<Head>
